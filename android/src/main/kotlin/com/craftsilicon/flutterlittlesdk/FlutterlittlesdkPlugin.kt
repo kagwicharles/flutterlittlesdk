@@ -11,7 +11,7 @@ import io.flutter.plugin.common.MethodChannel.Result
 /** FlutterlittlesdkPlugin */
 class FlutterlittlesdkPlugin: FlutterPlugin, MethodCallHandler {
 
-    private val CHANNEL = "flutter.native/helper"
+    private val CHANNEL = "com.craftsilicon.littlesdkchannelhelper"
     private lateinit var channel: MethodChannel
     private var pref: SharedPreferences? = null
     private var userPhone: String? = null
