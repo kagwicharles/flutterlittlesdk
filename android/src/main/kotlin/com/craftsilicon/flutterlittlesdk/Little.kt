@@ -1,5 +1,4 @@
-package com.craftsilicon.paramoutbnk
-
+package com.craftsilicon.flutterlittlesdk
 
 class Little {
 
