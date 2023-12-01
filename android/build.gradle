@@ -28,7 +28,7 @@ buildscript {
         mavenCentral()
 
         flatDir {
-            dirs project(':little_lib').file('libs')
+            dirs('libs')
         }
     }
 
@@ -46,7 +46,7 @@ allprojects {
         jcenter()
         maven { url "https://jitpack.io" }
         flatDir {
-            dirs project(':little_lib').file('libs')
+            dirs('libs')
         }
     }
 
@@ -110,7 +110,7 @@ flutter {
 }
 
 dependencies {
-    implementation(files("libs/little_lib.aar"))
+    implementation(name =   "little_lib", ext="aar")
 
     implementation 'com.google.maps.android:android-maps-utils:0.5+'
     implementation "com.android.support:design:28.0.0-alpha3"
