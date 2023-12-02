@@ -1,15 +1,16 @@
 package com.craftsilicon.flutterlittlesdk
 
 import androidx.annotation.NonNull
+import com.craftsilicon.littlecabrider.utils.LittleSdk
 
-import io.flutter.embedding.engine.plugins.FlutterPlugin
+import io.flutter.embedding.android.FlutterFragmentActivity
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 
 /** FlutterlittlesdkPlugin */
-class FlutterlittlesdkPlugin: FlutterPlugin, MethodCallHandler {
+class FlutterlittlesdkPlugin: FlutterFragmentActivity(), MethodCallHandler {
 
     private val CHANNEL = "com.craftsilicon.littlesdkchannelhelper"
     private lateinit var channel: MethodChannel
